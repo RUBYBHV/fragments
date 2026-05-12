@@ -11,5 +11,8 @@
     "url": "git+https://github.com/RUBYBHV/fragments.git"
   },
   "author": "RUBYBHV",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "prettier": "3.8.3"
+  }
 }
