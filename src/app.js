@@ -7,8 +7,7 @@ const passport = require('passport');
 const authenticate = require('./auth');
 const { createErrorResponse } = require('./response');
 
-// author and version from our package.json file
-const { author, version } = require('../package.json');
+
 
 const logger = require('./logger');
 const pino = require('pino-http')({
