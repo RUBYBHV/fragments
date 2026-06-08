@@ -131,7 +131,7 @@ class Fragment {
     try {
       const { type } = contentType.parse(value);
       return validTypes.includes(type);
-    } catch (err) {
+    } catch {
       return false;
     }
   }

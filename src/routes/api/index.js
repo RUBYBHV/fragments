@@ -24,7 +24,7 @@ const rawBody = () =>
         if (!header) return false;
         const { type } = contentType.parse(header);
         return Fragment.isSupportedType(type);
-      } catch (e) {
+      } catch {
         return false;
       }
     },
