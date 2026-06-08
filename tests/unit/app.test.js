@@ -1,5 +1,5 @@
 const request = require('supertest');
-const express = require('express');
+
 
 // Mock the routes module to add a route that throws an error
 jest.mock('../../src/routes', () => {
