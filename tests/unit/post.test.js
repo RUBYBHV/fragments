@@ -48,10 +48,23 @@ describe('POST /v1/fragments', () => {
       .post('/v1/fragments')
       .auth('test-user1@fragments-testing.com', 'test-password1')
       .send(data)
-      .set('Content-Type', 'application/json');
+      .set('Content-Type', 'image/jpeg');
 
     expect(res.statusCode).toBe(415);
     expect(res.body.status).toBe('error');
     expect(res.body.error).toBeDefined();
+  });
+
+  test('authenticated users can create a json fragment', async () => {
+    const data = JSON.stringify({ hello: 'world' });
+    const res = await request(app)
+      .post('/v1/fragments')
+      .auth('test-user1@fragments-testing.com', 'test-password1')
+      .send(data)
+      .set('Content-Type', 'application/json');
+
+    expect(res.statusCode).toBe(201);
+    expect(res.body.status).toBe('ok');
+    expect(res.body.fragment.type).toBe('application/json');
   });
 });
