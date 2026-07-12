@@ -118,6 +118,9 @@ class Fragment {
    * @returns {Array<string>} list of supported mime types
    */
   get formats() {
+    if (this.mimeType === 'text/markdown') {
+      return ['text/markdown', 'text/html'];
+    }
     return [this.mimeType];
   }
 
