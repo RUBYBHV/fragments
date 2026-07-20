@@ -8,7 +8,7 @@ user1@email.com:password1
 
 HTTP/1.1 201
 [Asserts]
-jsonpath "$.fragment.type" == "text/plain"
+jsonpath "$.fragment.type" == "text/plain; charset=utf-8"
 
 [Captures]
 url: header "Location"
