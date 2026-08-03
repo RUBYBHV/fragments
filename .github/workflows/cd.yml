@@ -68,8 +68,8 @@ jobs:
             PORT=80
             AWS_REGION=us-east-2
             AWS_S3_BUCKET_NAME=${{ secrets.AWS_S3_BUCKET_NAME }}
-            AWS_COGNITO_POOL_ID=${{ secrets.AWS_COGNITO_POOL_ID }}
-            AWS_COGNITO_CLIENT_ID=${{ secrets.AWS_COGNITO_CLIENT_ID }}
+            AWS_COGNITO_POOL_ID=us-east-2_HGgkgwLx3
+            AWS_COGNITO_CLIENT_ID=6bsjnjgdk4plpnuc16vho443a9
             FRAGMENTS_LOG_LEVEL=info
             API_URL=${{ secrets.API_URL }}
 
