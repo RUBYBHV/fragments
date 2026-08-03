@@ -38,8 +38,5 @@ COPY ./tests/.htpasswd ./tests/.htpasswd
 # Expose port 8080
 EXPOSE 8080
 
-# Run the container as a non-root user
-USER node
-
 # Start the container by running our server
 CMD ["npm", "start"]
