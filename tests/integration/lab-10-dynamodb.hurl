@@ -30,7 +30,7 @@ POST http://localhost:8080/v1/fragments
 Content-Type: text/markdown
 [BasicAuth]
 user1@email.com:password1
-```markdown
+```
 DynamoDB is **great**.
 ```
 
